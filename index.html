@@ -1062,7 +1062,7 @@ if (btnVencimientosPdf) {
             } catch(e){}
           }
           doc.setFont('helvetica','bold').setFontSize(20).setTextColor(...azul)
-             .text("Tablero de Abastecimiento | CEDIS Panamá", 35, 18);
+             .text("Tablero de Abastecimiento | CEDIS Chiriquí", 35, 18);
           doc.setFont('helvetica','normal').setFontSize(10).setTextColor(80)
              .text(`Corte Datos: ${fechaCorte} | Generado: ${new Date().toLocaleDateString()}`, 35, 24);
           doc.setDrawColor(200).line(14, 28, 196, 28);
@@ -1744,7 +1744,7 @@ function generarTableroVencimientosPDF(rep){
       try { doc.addImage(logoDataUrl, 'PNG', 14, 10, 15, 15); } catch (_) {}
     }
     doc.setFont('helvetica', 'bold').setFontSize(17).setTextColor(...azul);
-    doc.text('Tablero de Vencimientos | CEDIS Panamá', 35, 18);
+    doc.text('Tablero de Vencimientos | CEDIS Chiriquí', 35, 18);
     doc.setFont('helvetica', 'normal').setFontSize(9.5).setTextColor(80);
     doc.text(`Corte Datos: ${corte} | Generado: ${fechaHoyIso}`, 35, 24);
     doc.setDrawColor(200);
@@ -2543,7 +2543,7 @@ window.addEventListener('load', ()=>{
 
       pdf.setFontSize(13);
       pdf.setFont('helvetica','bold');
-      pdf.text('Curvas de Inventario — CEDIS PANAMÁ CSS', marginX, topMargin + 6);
+      pdf.text('Curvas de Inventario — CEDIS Chiriquí CSS', marginX, topMargin + 6);
 
       pdf.setFontSize(10);
       pdf.setFont('helvetica','normal');
@@ -2599,7 +2599,7 @@ window.addEventListener('load', ()=>{
           
           // Re-dibujar header en cada página
           pdf.setFontSize(13); pdf.setFont('helvetica','bold');
-          pdf.text('Curvas de Inventario — CEDIS PANAMÁ CSS', marginX, topMargin + 6);
+          pdf.text('Curvas de Inventario — CEDIS Chiriquí CSS', marginX, topMargin + 6);
           pdf.setFontSize(10); pdf.setFont('helvetica','normal');
           pdf.text('v1.0 · Torre de Control', marginX, topMargin + 12);
           pdf.setFontSize(9);
